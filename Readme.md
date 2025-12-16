@@ -1,0 +1,1 @@
+This is a powerfull AI tool helping create Powerfull presentations just by entering a prompt.
