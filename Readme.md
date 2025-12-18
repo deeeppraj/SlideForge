@@ -1,101 +1,87 @@
 # 🚀 SlideForge  
 **From prompts to presentation**
 
-SlideForge is an AI-powered presentation builder that transforms high-level user prompts into **fully editable, export-ready PowerPoint decks** with a modern SaaS experience. Users can generate slides from intent, edit content in real time, regenerate visuals, and export polished PPTs instantly.
+SlideForge is an AI-powered presentation builder that converts high-level user prompts into **fully editable, export-ready PowerPoint decks** with a modern SaaS experience. Users can generate slides, edit content in real time, regenerate visuals, and export polished PPTs instantly.
+
+🔗 **Live Demo:** https://slide-forge-frontend.vercel.app/
 
 🧪 Example Use Cases:
-Students creating quick presentations
+
+Students creating presentations quickly
 Founders building pitch decks
 Educators preparing lecture slides
-Professionals generating reports or briefings
+Professionals generating reports
 
 ---
 
 ## ✨ Features
 
 - 🧠 **Prompt-based Generation**  
-  Generate presentations using simple inputs like title, description, tone, purpose, target audience, and slide count.
+  Generate presentations using title, description, tone, purpose, audience, and slide count.
 
-- ✏️ **Real-Time Slide Editing**  
-  Edit titles, bullet points, and explanations live after generation.
+- ✏️ **Real-Time Editing**  
+  Edit titles, bullet points, and explanations after generation.
 
 - 🖼️ **AI Image Integration**  
-  Automatically fetches relevant images per slide with one-click regeneration.
+  Auto-fetch relevant images with one-click regeneration.
 
-- 🎨 **Premium Dark SaaS UI**  
-  Modern dark theme with glassmorphism, smooth loaders, and clean typography.
+- 🎨 **Modern Dark SaaS UI**  
+  Clean dark theme with smooth loaders and premium styling.
 
 - 📂 **PowerPoint Export**  
-  Export presentations as `.pptx` files using a custom Python layout engine.
+  Export decks as `.pptx` files using a custom Python layout engine.
 
-- ⚡ **Asynchronous UX**  
-  Loading indicators during generation and export for a smooth user experience.
+- ⚡ **Async UX**  
+  Loading states for generation and export ensure smooth interaction.
 
 ---
 
 ## 🧩 How It Works
 
-1. User submits high-level presentation intent  
+1. User submits presentation intent  
 2. Backend generates structured slide data  
-3. Slides are editable in the UI and stored in global state  
-4. Final deck is exported as a PowerPoint file
+3. Slides are editable in real time  
+4. Final deck is exported as a PowerPoint file  
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
+**Frontend**
 - React
-- Context API (Global State)
+- Context API
 - Axios
 - Tailwind CSS
 
-### Backend
+**Backend**
 - FastAPI
 - Python
 - python-pptx
-- langchain
-- Groq-api
+- LangChain
+- Groq API
 
-### Other
-- Image APIs for slide visuals
-- Blob-based file streaming for exports
-
----
-
+**Other**
+- Image APIs
+- Blob-based file streaming
 
 ---
 
 ## 🧠 Design Highlights
 
-- Dynamic layout control to prevent text overflow
+- Layout control to prevent text overflow
 - Font scaling based on slide density
-- Fresh PowerPoint instance per export (no state leakage)
+- Fresh PPT instance per export
 - Clean separation of generation and export logic
 
 ---
 
 ## 🚀 Getting Started
 
-### Backend
-
 ```bash
-cd backend
+cd Backend
 pip install -r requirements.txt
 uvicorn app:app --reload
 
-cd frontend/SlideForge
+cd Frontend/SlideForge
 npm install
 npm run dev
-
-Export -> Workflow:
-Exporting Presentations
-Click Generate Presentation after filling prompts
-Edit slides as needed
-Click Export PPT
-Download starts automatically
-
-
-👨‍💻 Author
-Deepraj
-Built with ❤️ as a full-stack AI product prototype.
